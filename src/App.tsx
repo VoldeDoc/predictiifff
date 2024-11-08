@@ -27,6 +27,9 @@ import IndividualSavings from "@/pages/saving/individualSavings";
 import UniquePortfolios from "@/pages/investing/uniquePortfolio";
 import Questions from "./pages/Questionnaire";
 import Abt from './pages/About/index';
+import AbtUs from "./pages/About/About Us";
+import Commit from "./pages/About/Commitment";
+import Mission from "./pages/About/Mission";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -78,6 +81,9 @@ function App() {
                 />
                 <Route path="/savings/individuals-savings" element={<IndividualSavings />} />
                 <Route path="/about" element={<Abt />} />
+                <Route path="/about/overview" element={<AbtUs />} />
+                <Route path="/about/commitment" element={<Commit />} />
+                <Route path="/about/mission-statement" element={<Mission />} />
 
                 {/* Ui */}
                 <Route path="/ui/button" element={<ButtonT />} />

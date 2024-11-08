@@ -9,7 +9,7 @@ type NavLink = {
 
 function NavBarLinks() {
   const navLinks: NavLink[] = [
-    { title: "Trading", link: "/" },
+    { title: "Home", link: "/" },
     {
       title: "Investment",
       link: "/investing",
@@ -38,16 +38,6 @@ function NavBarLinks() {
       ],
     },
     {
-      title: "Education",
-      link: "/education",
-      dropdown: [
-        { subTitle: "Academy", subLink: "/education" },
-        { subTitle: "News & Insights", subLink: "/education/news-insights" },
-        { subTitle: "Digest", subLink: "/education/digest" },
-        { subTitle: "Forum", subLink: "/education/forum" },
-      ],
-    },
-    {
       title: "Wealth Management",
       link: "/wealth-management",
       dropdown: [
@@ -66,13 +56,23 @@ function NavBarLinks() {
       ],
     },
     {
+      title: "Education",
+      link: "/education",
+      dropdown: [
+        { subTitle: "Academy", subLink: "/education" },
+        { subTitle: "News & Insights", subLink: "/education/news-insights" },
+        { subTitle: "Digest", subLink: "/education/digest" },
+        { subTitle: "Forum", subLink: "/education/forum" },
+      ],
+    },
+   
+    {
       title: "About us",
       link: "/about",
       dropdown: [
         { subTitle: "Mission Statement", subLink: "/about/mission-statement" },
-        { subTitle: "Vision", subLink: "/about/vision" },
         { subTitle: "Overview", subLink: "/about/overview" },
-        { subTitle: "Our Commitment", subLink: "/about/our-commitment" },
+        { subTitle: "Our Commitment", subLink: "/about/commitment" },
         { subTitle: "Corporate Social Responsibility", subLink: "/about/csr" },
       ],
     },

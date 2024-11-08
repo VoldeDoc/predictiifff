@@ -8,7 +8,6 @@ export default function Trade() {
             <MainLayout>
                 <div className="">
                     <div className="bg-blue-800 container-fluid ">
-
                         <div className="row py-10">
                             <div className="col-lg-6">
                                 <div className="space-y-5">

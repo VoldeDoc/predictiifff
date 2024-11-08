@@ -93,18 +93,21 @@ function NavBarLinks() {
             label={
               <NavbarLink
                 href={link}
-                className={isActive ? "active" : undefined}
+                className={`font-bold ${isActive ? "active border-b-2 border-blue-800 text-blue-800" : ""}`}
               >
                 {title}
               </NavbarLink>
             }
             inline
+            className="bg-blue-800"
           >
             {dropdown.map(({ subTitle, subLink }, subIndex) => (
               <Dropdown.Item
                 key={subIndex}
                 href={subLink}
-                className={pathname === subLink ? "active" : undefined}
+                className={`${
+                  pathname === subLink ? "active bg-blue-800 text-white hover:text-black" : "text-white hover:text-black"
+                }`}
               >
                 {subTitle}
               </Dropdown.Item>
@@ -114,7 +117,7 @@ function NavBarLinks() {
           <NavbarLink
             key={index}
             href={link}
-            className={pathname === link ? "active" : undefined}
+            className={`font-bold ${pathname === link ? "active border-b-2 border-blue-500 text-blue-500" : ""}`}
           >
             {title}
           </NavbarLink>

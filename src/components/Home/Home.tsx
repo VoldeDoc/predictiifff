@@ -1,21 +1,18 @@
 import MainLayout from "@/components/Layout/MainLayout";
 import HomeCarousel from "./Tools/HeroCarousel";
 import CompanyBrand from "@/components/Ui/companyBrand";
-import { useState } from "react";
+import { FaRocket } from "react-icons/fa6";
+import { BiLockOpenAlt } from "react-icons/bi";
+import { ArrowTrendingUpIcon } from "@heroicons/react/24/solid";
 // import BrandCarousel from "../tool/brandCarousel";
 
 export default function Home() {
-  const [bgColor, setBgColor] = useState("#4fb7ef");
 
-  const changeBackgroundColor = () => {
-    const colors = ["#4fb7ef", "#0020721A", "#002072"]; // Add your desired colors here
-    const currentColorIndex = colors.indexOf(bgColor);
-    const nextColorIndex = (currentColorIndex + 1) % colors.length;
-    setBgColor(colors[nextColorIndex]);
-  };
+
+ 
   return (
     <MainLayout>
-      <section className="mt-3 ">
+      <section className="mt-3 container">
         <div className="flex flex-col gap-10 items-center sm:flex-row sm:h-[35rem] h-[45rem]">
           {/* Text Section */}
           <div className="w-full sm:w-1/2 text-center sm:text-left container">
@@ -41,7 +38,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section style={{ backgroundColor: bgColor }}>
+      <section className="bg-[#4FB7EF]">
         <div className="container mx-auto px-6">
           <div className="row items-center">
             <p className="!mt-10 text-center sm:text-start col-sm-2 text-lg font-semibold">
@@ -132,12 +129,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <button
-            onClick={changeBackgroundColor}
-            className="mt-10 px-4 py-2 bg-white text-black font-semibold rounded"
-          >
-            Change Background Color
-          </button>
+         
         </div>
       </section>
 
@@ -147,13 +139,12 @@ export default function Home() {
             <img
               src="assets/images/landingPage/credit-cards.png"
               alt="credit cards"
-              className="w-3/5 h-auto"
-              width={80}
-              height={80}
+              className="w-3/5 h-72"
+              
             />
           </div>
 
-          <div className="col-xl-8 mt-14">
+          <div className="col-xl-8 mt-14 mb-12">
             <div className="row gap-7">
               <span className="relative col-lg-2">
                 <svg
@@ -217,31 +208,63 @@ export default function Home() {
         <div className="row">
           <span className="!p-6 sm:!p-20 bg-black-500 col-xl-6 h-auto">
             <h2 className="text-3xl sm:text-5xl font-bold text-white text-wrap">
-              Performance. Efficiency. Speed.
+            Rapid Data Processing
             </h2>
-            <p className="text-white mt-4 sm:mt-8 text-lg sm:text-xl text-wrap">
-              Leverage the combined power of IBM PREDICT.IF Finance and our
-              proprietary AI models to swiftly analyze vast streams of news
-              articles and alternative data sources.
+            <p className="text-white mt-4 sm:mt-8 text-md sm:text-xl text-wrap">
+            AI algorithms can process vast amounts of data at speeds far beyond human capabilities. This allows you to quickly analyze historical trends, market conditions, and economic indicators, leading to timely and informed decision-making. With AI, the time spent on data collection and preliminary analysis is drastically reduced, freeing you to focus on other aspects such as  strategic thinking and interpretation
             </p>
-            <span className="flex justify-between mt-6 sm:mt-10 text-white">
-              <span className="col-sm-6">
-                <p className="font-bold text-4xl sm:text-6xl">15%</p>
-                <p className="text-sm sm:text-base">AI Prediction</p>
-              </span>
-              <span className="col-sm-6">
-                <p className="font-bold text-4xl sm:text-6xl">40%</p>
-                <p className="text-sm sm:text-base">On Finance</p>
-              </span>
-            </span>
           </span>
 
-          <span className="bg-[#0c21c1] dark:bg-black col-xl-6 flex justify-center">
-            <img
-              src="assets/images/landingPage/earth.gif"
-              alt="Earth"
-              className="h-auto w-full object-cover"
-            />
+          <span className=" dark:bg-black col-xl-6 flex justify-center">
+         <div className="flex-col space-y-4">
+          
+         <div className="bg-[#0C21C11A] px-4 py-14">
+                  <div className="flex items-center space-x-6">
+                    <div className="bg-[#0c21c1ec] rounded-full text-center p-5 text-white flex items-center justify-center">
+                      <FaRocket className="w-6 h-6" />
+                    </div>
+                    <div className="">
+                      <p className="font-bold pb-2">Real-Time Analysis</p>
+                      <p className="leading-relaxed">
+                      AI enables real-time monitoring of financial markets, allowing you to respond quickly to emerging trends and events. Automated systems can track fluctuations in asset prices, news releases, and social media sentiment, ensuring that investors such as yourself are always informed and ready to act.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-[#0C21C1] px-4 py-14 ">
+                  <div className="flex items-center space-x-6">
+                    <div className="bg-white rounded-full text-center p-5 text-dark-500 flex items-center justify-center">
+                      <BiLockOpenAlt className="w-6 h-6" />
+                    </div>
+                    <div>
+                      <p className="font-bold pb-2 text-white">
+                      Streamlined Risk Assessment
+                      </p>
+                      <p className="leading-relaxed text-white">
+                      AI enhances the efficiency of risk assessment by analyzing multiple variables simultaneously. Machine learning algorithms can quickly evaluate the potential risks associated with different assets, providing a comprehensive risk profile in a fraction of the time it would take using manual methods. This enables more agile investment strategies and better risk management.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-black px-4 py-14 ">
+                  <div className="flex items-center space-x-6">
+                    <div className="bg-white rounded-full text-center p-5 text-dark-500 flex items-center justify-center">
+                      <ArrowTrendingUpIcon className="w-6 h-6" />
+                    </div>
+                    <div>
+                      <p className="font-bold pb-2 text-white">
+                      Automated Pattern Recognition
+                      </p>
+                      <p className="leading-relaxed text-white">
+                      AI excels in identifying patterns and anomalies within financial data. Machine learning models can sift through countless data points to uncover trends that may go unnoticed using traditional methods. This automation not only accelerates the analysis process but also enhances accuracy, allowing investors to capitalize on insights in real time.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+         </div>
+              
           </span>
         </div>
       </section>

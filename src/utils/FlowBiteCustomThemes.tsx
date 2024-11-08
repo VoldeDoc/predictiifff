@@ -18,7 +18,7 @@ export const customMarketZoneNavbarTheme: CustomFlowbiteTheme["navbar"] = {
   },
   link: {
     active: {
-      on: "md:text-white md:dark:text-dark md:bg-transparent bg-gray-500 text-white md:rounded-none rounded",
+      on: "md:text-white md:dark:text-dark md:bg-transparent bg-gray-500 text-white md:rounded-none rounded border-b-2 border-blue-500",
       off: "text-gray-400 hover:text-gray-600",
     },
   },

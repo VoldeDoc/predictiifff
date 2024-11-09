@@ -65,7 +65,7 @@ function IndividualSavingsComp() {
         </div>
       </section>
 
-      <section className="flex flex-col items-center py-16 lg:flex-row lg:justify-between lg:px-72 mb-36">
+      <section className="flex flex-col items-center py-16 lg:flex-row lg:justify-between lg:px-72 mb-36 bg-[#DBE5FA]">
         <div className="max-w-md text-center lg:text-left">
           <h3 className="text-2xl font-semibold">Try Predict.it Finance</h3>
           <p className="mt-4 text-gray-700">

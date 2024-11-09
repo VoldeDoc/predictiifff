@@ -110,6 +110,7 @@ export default function SavingsTab() {
                 .active-tab {
                     border-bottom: 2px solid #007bff;
                     padding-bottom: 4px;
+                    color: #0C21C1;
                 }
                 .no-background {
                     background: none !important;

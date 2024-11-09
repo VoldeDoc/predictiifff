@@ -72,7 +72,7 @@ function App() {
                 <Route path="/market-zone" element={<Market />} />
                 <Route path="/investing/etfs" element={<Trading />} />
                 <Route path="/education" element={<Educate />} />
-                <Route path="/investing/global-stock" element={<Invest2 />} />
+                <Route path="/wealth-management" element={<Invest2 />} />
                 <Route path="/investing/unique-portfolios" element={<UniquePortfolios />} />
                 <Route path="/savings" element={<Save />} />
                 <Route

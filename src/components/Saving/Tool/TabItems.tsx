@@ -18,7 +18,7 @@ export default function TabItem({ Icon, title, descriptions }: TabItemProps) {
                 </h1>
            
             </div>
-            <div className="ml-4 pb-6">
+            <div className="ml-4 pb-6 px-9">
                 {descriptions.map((desc, index) => (
                     <p key={index} className="flex items-center">
                         {desc}

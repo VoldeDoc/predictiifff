@@ -17,8 +17,8 @@ function Footer() {
             alt="Predict.if logo"
             className="w-52 mb-4"
           />
-          <p className="text-gray-300 mb-6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          <p className="text-gray-300 mb-6 text-sm">
+          Our mission is to revolutionize financial decision-making by harnessing the power of AI to create predictive models that integrate historical financial data, current affairs, and advanced analytics. 
           </p>
         </div>
 

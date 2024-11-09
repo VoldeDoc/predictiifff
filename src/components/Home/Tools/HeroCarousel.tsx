@@ -10,13 +10,13 @@ export default function HomeCarousel() {
             alt: "Man"
         },
         {
-            img: "assets/images/landingPage/man.png",
+            img: "assets/images/landingPage/undraw.svg",
             alt: "Man"
         },
-        {
-            img: "assets/images/landingPage/man.png",
-            alt: "Man"
-        },
+        // {
+        //     img: "assets/images/landingPage/man.png",
+        //     alt: "Man"
+        // },
     ];
 
 

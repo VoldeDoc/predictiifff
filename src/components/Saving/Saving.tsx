@@ -10,13 +10,13 @@ export default function Saving() {
             <>
                 <main>
                     <section className="relative flex items-center justify-center bg-gray-100">
-                        <img src="/assets/images/saving/BG.svg" alt="Background image for Saving page" className="object-cover w-full h-full" />
-                        <div className="absolute top-10 left-5 sm:top-20 sm:left-20 px-4 py-4 w-[90%] sm:w-[760px] max-w-full h-auto sm:h-96 bg-white space-y-5">
-                            <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-bold">
+                        <img src="/assets/images/saving/BG.svg" alt="Background image for Saving page" className="object-cover w-full h-[450px]" />
+                        <div className="absolute top-10 left-5 sm:top-20 sm:left-20 px-9 py-4 w-[90%] sm:w-[760px] max-w-full h-auto sm:h-64 bg-white space-y-5">
+                            <h1 className="text-md sm:text-lg  font-bold">
                                 Predict.if Account (GBP/USD/EUR/Naira) (powered by Zigsaw) (Coming soon)
                             </h1>
-                            <p className="text-xs sm:text-sm md:text-base lg:text-lg">Introducing our multi-currency account designed for flexibility and ease in managing your finances. Perfect for both individual and group savings, this account allows high-level transfers with competitive rates. Hold and transact in multiple currencies, including Naira, GBP, USD, and EUR, making it ideal for international transactions and travel. Experience seamless banking that adapts to your financial needs, whether saving for personal goals or collaborating with a group. Join us for a smarter way to manage your money!</p>
-                            <button className="bg-blue-800 text-white py-2 px-4 text-xs sm:text-sm md:text-base lg:text-lg">Get Started Free</button>
+                            <p className="text-sm">Introducing our multi-currency account designed for flexibility and ease in managing your finances. Perfect for both individual and group savings, this account allows high-level transfers with competitive rates. Hold and transact in multiple currencies, including Naira, GBP, USD, and EUR, making it ideal for international transactions and travel. Experience seamless banking that adapts to your financial needs, whether saving for personal goals or collaborating with a group. Join us for a smarter way to manage your money!</p>
+                            <button className="bg-blue-800 text-white text-sm px-2 py-2">Get Started Free</button>
                         </div>
                     </section>
 
@@ -366,10 +366,13 @@ export default function Saving() {
 
                             </div>
 
-                            <div className="row">
+                        </div>
+                    </div>
+                    
+                    <div className="container mt-16">
+                    <div className="row ">
                                 <SavingsTab />
                             </div>
-                        </div>
                     </div>
                 </main>
             </>

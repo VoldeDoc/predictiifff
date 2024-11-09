@@ -8,13 +8,13 @@ export default function Education() {
         <MainLayout>
             <>
                 <main>
-                    <div className="container-flid">
-                        <img src="/assets/images/education/Frame.svg" className="objext-contain" alt="" />
+                    <div className="container-fluid">
+                       <img src="/assets/images/education/Frame.svg" className="object-contain h-[400px] w-full" alt="" />
                     </div>
-                    <div className="container">
+                    <div className="container py-6">
                         <h1 className="text-3xl font-bold pt-7">All the Knowledge </h1>
                         <h1 className="text-3xl font-bold">You Need to Invest in One Place</h1>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 my-10">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  my-10">
                             <div className="bg-blue-900 rounded-lg px-6 py-3 text-white shadow-lg flex flex-col justify-between h-full">
                                 <div>
                                     <p className="font-bold text-lg">Guide</p>
@@ -72,7 +72,7 @@ export default function Education() {
                     </div>
 
 
-                    <div className="container py-14">
+                    <div className="container py-7">
                         <h1 className="text-3xl font-bold pb-5">Investor’s Digest</h1>
                         <div className="flex space-x-4">
                             <CheckIcon className="w-5 h-5 text-green-700" />
@@ -113,13 +113,13 @@ export default function Education() {
                         </div>
                     </div>
 
-                    <div className="container py-14">
+                    <div className="container py-7">
                         <h1 className="text-3xl font-bold py-4">Predict.if Forum</h1>
                         <p className="py-4">
                             Predict.if forum is the space designed for our subscribers to enhance <br /> the overall user experience and community <br /> engagement. Here are some key benefits:
                         </p>
                         <div className="row">
-                            <div className="col-lg-5 space-y-6">
+                            <div className="col-lg-6 space-y-6">
                                 <div className="flex space-x-3 bg-gray-100 rounded-lg px-2 py-2">
                                     <EyeIcon className="text-blue-500 w-10" />
                                     <p><span className="font-bold">Knowledge Sharing :</span> Users can exchange insights, tips, and strategies about financial topics, helping each other learn and grow.</p>
@@ -140,7 +140,10 @@ export default function Education() {
                                     <RiDownloadCloudLine className="text-blue-500 w-16" />
                                     <p><span className="font-bold">Diverse Perspectives :</span>  Users come from various backgrounds and experiences, providing a wide range of opinions and strategies that can enrich discussions.</p>
                                 </div>
-                                <div className="flex space-x-3 rounded-lg px-2 py-2">
+                                
+                            </div>
+                            <div className="col-lg-6">
+                            <div className="flex space-x-3 rounded-lg px-2 py-2">
                                     <RiDownloadCloudLine className="text-blue-500 w-16" />
                                     <p><span className="font-bold">Feedback and Improvement : </span> Users can provide feedback on the application, suggest new features, and report issues, helping developers enhance the product based on community needs.</p>
                                 </div>
@@ -161,9 +164,6 @@ export default function Education() {
                                     <p><span className="font-bold">Community Building :</span>  A forum cultivates a sense of belonging among users, making them feel part of a larger community focused on shared financial goals.</p>
                                 </div>
 
-                            </div>
-                            <div className="col-lg-7">
-                                <img src="/assets/images/education/visualize.svg" alt="" />
                             </div>
                         </div>
                     </div>
